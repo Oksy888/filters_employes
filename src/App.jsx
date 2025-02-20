@@ -101,7 +101,7 @@ class App extends Component {
     const { data, term, filter } = this.state
     const increased = data.filter((el) => el.increase).length
     const visibleData = this.filterPost(this.searchEmpl(data, term), filter)
-    const countBonus = data.length - increased
+    const countBonus = data.filter((el) => el.rise).length
     return (
       <div className="app">
         <AppInfo
