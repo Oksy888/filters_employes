@@ -107,7 +107,7 @@ class App extends Component {
         <AppInfo
           countItems={data.length}
           countIncrease={increased}
-          countBonus
+          countBonus={countBonus}
         />
         <div className="search-panel">
           <SearchPanel onUpdateSearch={this.onUpdateSearch} />
